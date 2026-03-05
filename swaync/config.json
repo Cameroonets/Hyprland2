@@ -1,0 +1,64 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "position": "top-center",
+  "layer": "top",
+  "control-center-width": 500,
+  "control-center-height": 600,
+  "control-center-margin-top": 10,
+  "control-center-margin-bottom": 10,
+  "control-center-margin-right": 10,
+  "control-center-margin-left": 10,
+  "notification-window-width": 400,
+  
+  "widgets": [
+    "label",
+    "dnd",
+    "mpris",
+    "volume",
+    "backlight",
+    "notifications"
+  ],
+  
+  "widget-config": {
+    "label": {
+      "text": "кнопки",
+      "clear-all-button": true
+    },
+    "volume": {
+      "label": "🔊"
+    },
+    "backlight": {
+      "label": "☀️",
+      "device":"amdgpu_bl1"
+    },
+    "mpris": {
+      "image-size": 96,
+      "image-radius": 12
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "🌐 Wi-Fi",
+          "command": "nm-connection-editor" 
+        },
+        {
+          "label": "🔵 Bluetooth",
+          "command": "blueman-manager"
+        },
+        {
+          "label": "🌙 Ночной режим",
+          "command": "hyprshade toggle blue-light-filter"
+        },
+        {
+          "label": "✈️ Режим полета",
+          "command": "nmcli radio all off"
+        },
+        {
+          "label": "⚙️ Настройки",
+          "command": "pavucontrol"
+        }
+      ]
+    }
+  }
+}
+
