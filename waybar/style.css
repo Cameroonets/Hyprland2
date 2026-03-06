@@ -50,6 +50,14 @@ button:hover {
   border-radius: 15px;
 }
 
+#mpris {
+  background: transparent;
+  color: @lavender;
+  padding: 0 5px 0 5px;
+  margin: 2px 2px 2px 2px; 
+  border-radius: 15px;
+}
+
 #window {
   background: rgba(0, 0, 0, 0);
   padding: 0 5px 0 5px;
@@ -94,6 +102,7 @@ button:hover {
 
 #clock {
   color: @text;
+  margin: 2px 4px 2px 2px;
 }
 #battery,
 #network,

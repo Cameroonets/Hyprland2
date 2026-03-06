@@ -15,13 +15,11 @@
 	"hyprland/workspaces"
     ],
     "modules-right": [
+    "mpris",
     "hyprland/language",
     "pulseaudio",
     "battery",
     "network",
-    "custom/terminal",
-    "custom/thunar",
-    "custom/browser",
     "custom/exit"
     ],
        "hyprland/window": {
@@ -63,8 +61,8 @@
       "format": "{}% "
     },
     "network": {
-      "format-wifi": "  {signalStrength}%",
-      "format-ethernet": "{cidr} ",
+      "format-wifi": " {signalStrength}%",
+      "format-ethernet": "",
       "tooltip-format": "{ifname} via {gwaddr} ",
       "format-linked": "{ifname} (No IP) ",
       "format-disconnected": " ⚠ ",
@@ -104,6 +102,23 @@
         "default": ["", "", ""]
       },
       "on-click": "pavucontrol"
+    },
+    "mpris": {
+    "format": "{player_icon} {title}",
+    "format-paused": "󰏤 {title}",
+    "player-icons": {
+        "default": "󰐊",
+        "spotify": "",
+        "firefox": "󰈹",
+        "chromium": ""
+    },
+    "status-icons": {
+        "paused": "󰏤"
+    },
+    "max-length": 25,
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
     },
     "hyprland/window": {
         "format": {},
