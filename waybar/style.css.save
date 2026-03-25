@@ -1,5 +1,5 @@
 @import "mocha.css";
-@import "wallust-colors.css";
+@import "
 * {
 /* Основной шрифт — Comfortaa, запасной для иконок — Symbols NF */
     font-family: "Comfortaa", "Symbols Nerd Font Mono";
@@ -12,7 +12,7 @@
 }
 
 window#waybar {
-  color: @foreground;
+  color: @text;
   /*background-color: rgba(26, 26, 26, 0.67);*/
   border-radius: 0px;
   transition-property: background-color;
@@ -42,17 +42,17 @@ button:hover {
 }
 
 #tray {
-  background: @background;
-  color: @foreground;
+  background: @mantle;
+  color: @text;
   padding: 0 5px 0 5px;
   margin: 2px 2px 2px 2px;
-  border: 2px solid @color1;
+  border: 2px solid @lavender;
   border-radius: 15px;
 }
 
 #mpris {
   background: transparent;
-  color: @color1;
+  color: @lavender;
   padding: 0 5px 0 5px;
   margin: 2px 2px 2px 2px; 
   border-radius: 15px;
@@ -66,27 +66,27 @@ button:hover {
 }
 
 #workspaces {
-  background: @background;
-  color: @foreground;
+  background: @mantle;
+  color: @text;
   padding: 0 1px 0 1px;
   margin: 2px 5px 2px 5px;
-  border: 2px solid @color1;
+  border: 2px solid @lavender;
   border-radius: 15px;
 }
 
 #workspaces button {
   padding: 0 8px;
-  color: @foreground;
+  color: @text;
   background-color: transparent;
   border-radius: 15px;
   transition: all 0.3s ease;
 }
 
 #language {
-  background: @background;
+  background: @mantle;
   margin: 2px 5px 2px 5px;
   padding: 0 15px 0 15px;
-  border: 2px solid @color1;
+  border: 2px solid @lavender;
   border-radius: 15px;
   transition: all 0.3s ease;
 }  
@@ -101,19 +101,19 @@ button:hover {
 }
 
 #clock {
-  color: @foreground;
+  color: @text;
   margin: 2px 4px 2px 2px;
 }
 #battery,
 #network,
 
 #pulseaudio {
-  background: @background;
+  background: @mantle;
   padding: 0 15px 0 15px;
   margin: 2px 5px 2px 5px;
-  border: 2px solid @color1;
+  border: 2px solid @lavender;
   border-radius: 15px;
-  color: @foreground;
+  color: @text;
   transition: all 0.3s ease;
 }
 
@@ -122,11 +122,11 @@ button:hover {
 }
 
 #power-profiles-daemon {
-  background: @background;
+  background: @mantle;
   margin: 2px 2px 2px 2px;
   min-width: 20px;
   padding: 0 3px 0 3px;
-  border: 2px solid @color1;
+  border: 2px solid @lavender;
   border-radius: 18px;
   transition: all 0.3s ease;
 }
@@ -136,11 +136,11 @@ button:hover {
 }
 
 #custom-exit {
-  background: @background;
+  background: @mantle;
   margin: 2px 1px 2px 1px;
   padding: 0 3px 0 3px;
   min-width: 20px;
-  border: 2px solid @color1;
+  border: 2px solid @lavender;
   border-radius: 15px;
   transition: all 0.3s ease;
 }
@@ -150,11 +150,11 @@ button:hover {
 }
 
 #custom-browser {
-  background: @background;
+  background: @mantle;
   margin: 2px 1px 2px 1px;
   padding: 0 3px 0 3px;
   min-width: 20px;
-  border: 2px solid @color1;
+  border: 2px solid @lavender;
   border-radius: 15px;
   transition: all 0.3s ease;
 }
@@ -164,11 +164,11 @@ button:hover {
 }
 
 #custom-thunar {
-  background: @background;
+  background: @mantle;
   margin: 2px 1px 2px 1px;
   padding: 0 3px 0 3px;
   min-width: 20px;
-  border: 2px solid @color1;
+  border: 2px solid @lavender;
   border-radius: 15px;
   transition: all 0.3s ease;
 }
@@ -178,11 +178,11 @@ button:hover {
 }
 
 #custom-terminal {
-  background: @background;
+  background: @mantle;
   margin: 2px 1px 2px 1px;
   padding: 0 3px 0 3px;
   min-width: 20px;
-  border: 2px solid @color1;
+  border: 2px solid @lavender;
   border-radius: 15px;
   transition: all 0.3s ease;
 }
@@ -192,10 +192,10 @@ button:hover {
 }
 
 #custom-swaync {
-  background: @background;
+  background: @mantle;
   margin: 2px 2px 2px 2px;
   min-width: 20px;
-  border: 2px solid @color1;
+  border: 2px solid @lavender;
   padding: 0 3px 0 3px;
   border-radius: 18px;
   transition: all 0.3s ease;
@@ -206,12 +206,12 @@ button:hover {
 }
 
 #network {
-  background: @background;
+  background: @mantle;
   padding: 0 15px 0 15px;
   margin: 2px 2px 2px 2px;
-  border: 2px solid @color1;
+  border: 2px solid @lavender;
   border-radius: 15px;
-  color: @foreground;
+  color: @text;
   transition: all 0.3s ease;
 }
 
@@ -220,12 +220,12 @@ button:hover {
 }
 
 #clock {
-  background: @background;
+  background: @mantle;
   padding: 0 15px 0 15px;
   border-radius: 15px;
   margin: 2px 0px 2px 0px;
-  border: 2px solid @color1;
-  color: @foreground;
+  border: 2px solid @lavender;
+  color: @text;
   transition: all 0.3s ease;
 }
 
@@ -285,5 +285,5 @@ label:focus {
 }
 
 #pulseaudio.muted {
-  color: @background;
+  color: @mantle;
 }
