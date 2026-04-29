@@ -1,7 +1,7 @@
 backend = "kmeans"
 color_space = "labmixed"
 threshold = 20
-filter = "dark16"
+filter = "light16"
 
 [templates]
 # 'hypr' и 'waybar' — это уникальные ключи (названия) для шаблонов
